@@ -18,6 +18,7 @@ const DeleteModal = ({ show, onDeleteClick, onCloseClick }) => {
             </div>
           </Col>
         </Row>
+        
         <Row>
           <Col>
             <div className="text-center mt-3">
