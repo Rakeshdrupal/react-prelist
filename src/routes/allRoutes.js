@@ -7,6 +7,20 @@ import UserProfile from "../pages/Authentication/user-profile"
 // Pages Calendar
 import Calendar from "../pages/Calendar/index"
 
+
+import ManageAgent from "../pages/Agent/mange-agent" 
+import AgentFree from "../pages/Agent/agent-free"
+import AgentPro from "../pages/Agent/agent-pro"
+
+import MangeTemplate from "../pages/Agent/mange-template"
+import TemplateAllocation from "../pages/Agent/template-allocation"
+
+import FreeTrialTemplate from "../pages/Agent/free-trial-template"
+import BeProTemplate from "../pages/Agent/be-pro-template"
+import ManageSubscription from "../pages/Agent/manage-subscription"
+import AllRegisterAgent from "../pages/Agent/all-register-agent"
+
+
 //Email
 import EmailInbox from "../pages/Email/email-inbox"
 import EmailRead from "../pages/Email/email-read"
@@ -120,6 +134,22 @@ const userRoutes = [
 
   // //profile
   { path: "/profile", component: UserProfile },
+  
+  { path: "/mange-agent", component: ManageAgent },
+  { path: "/agent-free", component: AgentFree },
+  { path: "/agent-pro", component: AgentPro },
+
+  
+  { path: "/mange-template", component: MangeTemplate },
+  { path: "/template-allocation", component: TemplateAllocation },
+
+
+  { path: "/free-trial-template", component: FreeTrialTemplate },
+  { path: "/be-pro-template", component: BeProTemplate },
+  { path: "/manage-subscription", component:  ManageSubscription },
+  { path: "/all-register-agent", component:  AllRegisterAgent },
+  
+ 
 
   //Email
   { path: "/email-inbox", component: EmailInbox },

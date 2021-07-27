@@ -101,22 +101,24 @@ const SidebarContent = props => {
             </li>
 
             <li>
-              <Link to="/#" className="has-arrow waves-effect">
-                <i className="ti-archive"></i>
+              <Link to="manage-agent" className="has-arrow waves-effect">
+                <i className="ti-user"></i>
                 <span>{props.t("Manage Agent")}</span>
               </Link>
-
               <ul className="sub-menu">
-              <Link to="/#" className="waves-effect">
-                <i className="ti-receipt"></i>
-                <span>{props.t("Add agent")}</span>
+
+              <Link to="all-register-agent" className="waves-effect">
+                <i className="ti-user"></i>
+                <span>{props.t("All Registered Agent")}</span>
               </Link>
-              <Link to="/#" className="waves-effect">
-                <i className="ti-receipt"></i>
+
+
+              <Link to="agent-free" className="waves-effect">
+                <i className="ti-user"></i>
                 <span>{props.t("Registered Agent ( For Free Trial )")}</span>
               </Link>
-              <Link to="/#" className="waves-effect">
-                <i className="ti-receipt"></i>
+              <Link to="agent-pro" className="waves-effect">
+                <i className="ti-user"></i>
                 <span>{props.t("Registered Agent ( For Paid  )")}</span>
               </Link>
              </ul>
@@ -129,10 +131,28 @@ const SidebarContent = props => {
               </Link>
               <ul className="sub-menu">
                 <li>
-                  <Link to="/form-elements">{props.t("Manage Template")}</Link>
+                  <Link to="/mange-template">{props.t("Manage Template")}</Link>
                 </li>
                 <li>
-                  <Link to="/form-elements">{props.t("Template Allocation")}</Link>
+                  <Link to="/template-allocation">{props.t("Template Allocation")}</Link>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <Link to="manage-subscription" className="has-arrow waves-effect">
+                <i className="ti-archive"></i>
+                <span>{props.t("Manage Subscription")}</span>
+              </Link>
+              <ul className="sub-menu">
+              <li>
+                  <Link to="/manage-subscription">{props.t("Subscription Plan")}</Link>
+                </li>
+                <li>
+                  <Link to="/free-trial-template">{props.t("Free Trial for 7 days")}</Link>
+                </li>
+                <li>
+                  <Link to="/be-pro-template">{props.t("Be a Pro")}</Link>
                 </li>
               </ul>
             </li>
